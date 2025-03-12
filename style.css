@@ -1,3 +1,8 @@
+
+:root {
+    --white: #fbfbfb;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -20,9 +25,41 @@ html, body {
 
 
 header {
-    position: absolute;
+    position: sticky;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    background-color: var(--white);
 }
+
+    nav {
+        
+    }
+
+    #nav-list {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: space-between;
+        list-style: none;
+    }
+
+        .nav-list-items {
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+
+    #title {
+        font-size: 2.5rem;
+    }
+
+    address {
+        font-size: 1.2rem;
+    }
 
 
 
@@ -35,5 +72,23 @@ header {
 
 
 main {
-
+    width: 100%;
+    background-color: rgb(0, 200, 200);
+    padding: 3rem 8rem 3rem 8rem;
 }
+
+    #skills-section {
+        background-color: #333;
+        color: var(--white);
+        border: solid 0.2rem var(--white);
+        border-radius: 1rem;
+        padding: 2rem;
+    }
+
+        #skills-title {
+            font-size: 3rem;
+        }
+
+        #skills-list {
+            
+        }
